@@ -9,13 +9,14 @@
 # value types according to the spec
 
 
-class CreateCostumes < ActiveRecord::Migration[4.2]
+class CreateCostumes < ActiveRecord::Base
   
   def change
     create_column :costumes do |t|
       t.string :name
       t.integer :price
       t.string :image_url
+      t.integer :size
     end
   end
   
