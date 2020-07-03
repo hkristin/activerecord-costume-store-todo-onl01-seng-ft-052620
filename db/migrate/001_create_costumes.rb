@@ -9,7 +9,7 @@
 # value types according to the spec
 
 
-class CreateCostumes < ActiveRecord::Base
+class CreateCostumes < ActiveRecord::Migration[4.2]
   
   def change
     create_column :costumes do |t|
